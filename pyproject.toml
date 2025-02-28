@@ -6,7 +6,9 @@ dependencies = [
     "scipy",
     "pandas",
     "polars",
+    "pyarrow",
     "seaborn",
+    "pingouin",
     "jupyterlab",
     "jupyterlab_rise"
 ]
