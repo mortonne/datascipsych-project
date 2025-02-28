@@ -34,16 +34,14 @@ def exclude_fast_responses(df, thresh=0.2):
     """Exclude responses that were too quick to be reactions."""
     df_filt = (
         df.with_columns(
-            pl.when(pl.col("RT") < thresh)
+            RT=pl.when(pl.col("RT") < thresh)
             .then(None)
             .otherwise(pl.col("RT"))
-            .alias("RT"),
         )
         .with_columns(
-            pl.when(pl.col("RT").is_null())
+            response=pl.when(pl.col("RT").is_null())
             .then(None)
             .otherwise(pl.col("response"))
-            .alias("response")
         )
     )
     return df_filt
