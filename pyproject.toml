@@ -1,6 +1,11 @@
 [project]
 name = "project"
 version = "0.1.0"
+description = "Reanalysis of Osth & Fox (2019)"
+readme = "README.md"
+authors = [
+    { name = "Neal Morton", email = "mortonne@gmail.com" }
+]
 requires-python = ">3.10"
 dependencies = [
     "numpy",
@@ -15,5 +20,5 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
