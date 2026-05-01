@@ -1,4 +1,6 @@
 # datascipsych-project
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mortonne/datascipsych-project/HEAD?urlpath=%2Fdoc%2Ftree%2Fjupyter%2Freport.ipynb)
+
 Sample project for Data Science in Psychology course
 
 ## Installation
